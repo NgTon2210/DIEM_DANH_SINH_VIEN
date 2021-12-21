@@ -1,0 +1,6 @@
+==========DANH SÁCH LỚP============
+['Nguyen Van Ton', 'thuy ngan']
+==========CÓ MẶT============
+Nguyen Van Ton
+==========VẮNG MẶT============
+thuy ngan

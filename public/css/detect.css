@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.detect-login{
+    text-align: end;
+    padding: 20px;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 800px;
+    height: 800px;
+}
+.content-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.content .content-detect{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.detect-image{
+    height: 300px;
+    width: 300px;
+}
+.detect-image img{
+    width: 100%;
+    height: 100%;
+}
+.content .content-title{
+    
+}
+.content .content-info h4{
+    margin-top: 100px;
+}
