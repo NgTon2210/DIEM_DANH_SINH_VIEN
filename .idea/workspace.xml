@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dd671e8-0690-495b-92ea-be5fd03183bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/server/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_design/database.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/database_design/database.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_design/database.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/database_design/database.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/08_10_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/08_10_2021.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/10_10_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/10_10_2021.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/11_12_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/11_12_2021.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/main_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/main_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data_test/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data_test/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data_test/my_self_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data_test/my_self_2.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22bOcSXwah0lsi7XPlmC7Z3tVbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/server/static/175A071455" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\public\server\static\175A071455" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server\data_test\ton" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server\data_test\phuc" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server\my_db" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\public\server\static\175A071455" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\public\server\static\175A071456" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\public" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server\static" />
+      <recent name="C:\Users\Ng_Ton\OneDrive\Desktop\DIEM_DANH_SINH_VIEN\server\static\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/public/server" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/server/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Ng_Ton\anaconda3\envs\detect_face\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/public/server" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/server/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.app" />
+      <item itemvalue="Python.app (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.app (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dd671e8-0690-495b-92ea-be5fd03183bc" name="Default Changelist" comment="" />
+      <created>1640102899215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640102899215</updated>
+      <workItem from="1640102901461" duration="10699000" />
+      <workItem from="1640184482627" duration="115000" />
+      <workItem from="1640184613430" duration="10000" />
+      <workItem from="1640184626522" duration="11181000" />
+      <workItem from="1640196324730" duration="1302000" />
+      <workItem from="1640261619438" duration="7859000" />
+      <workItem from="1640347780290" duration="10090000" />
+      <workItem from="1640363307038" duration="6189000" />
+      <workItem from="1640373742888" duration="6276000" />
+      <workItem from="1640400865590" duration="69000" />
+      <workItem from="1640401016055" duration="152000" />
+      <workItem from="1640401264091" duration="8087000" />
+      <workItem from="1640510400216" duration="2544000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DIEM_DANH_SINH_VIEN$app.coverage" NAME="app Coverage Results" MODIFIED="1640511859644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/server" />
+  </component>
+</project>

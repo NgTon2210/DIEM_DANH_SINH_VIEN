@@ -12,8 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/listen-server', 'HomeController@handleData');
+
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/student/add', 'HomeController@addStudent')->name('add.student');
+
 
 Route::get('/login', 'Auth\LoginController@index')->middleware('CheckLogout')->name('login');
 

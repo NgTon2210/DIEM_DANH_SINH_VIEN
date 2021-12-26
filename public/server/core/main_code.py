@@ -40,7 +40,7 @@ def get_data(path_file):
     with open(path_file, 'r+', encoding = 'utf8' ) as file:
         arr = []
         if os.path.getsize(path_file) != 0:
-            arr = json.load(file)  
+            arr = json.load(file)
 
     #lặp mảng và xử lý để lấy măt dưới dạng ma trận
     for value in arr:
@@ -74,7 +74,7 @@ def take_attendance(name,list_present,list_absent):
             list_absent.remove(name)
 
     return list_present, list_absent #neu có rồi thì return
-    
+
 
 known_face_encodings = [] # chứa danh sách face dưới dạng ma trận
 known_face_names = [] # chứa danh sách tên tương ứng
@@ -109,14 +109,14 @@ while True:
         name = input("Nhập họ tên: ")
         img_name = "img_" + datetime.now().strftime('%d_%m_%Y_%H_%M_%S')+".jpg"
         data = {"name" : name , "path" : "data/"+img_name}
-        add_user_to_json("data/data.json",data) #add vào json
+        add_user_to_json("data/data.json", data) #add vào json
         cv2.imwrite("data/" + img_name, frame) #add anh tuong ung vao data
         print("Đã thêm học sinh mới với tên : " + name)
     elif key == 117:
         known_face_encodings, known_face_names = get_data("data/data.json")
         list_absent = get_list_student("data/data.json")
 
- 
+
 
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
     rgb_small_frame = small_frame[:, :, ::-1]
@@ -147,7 +147,7 @@ while True:
 
     # Display the results
     for (top, right, bottom, left), name in zip(face_locations, face_names):
-       
+
         top *= 4
         right *= 4
         bottom *= 4
@@ -166,7 +166,7 @@ while True:
         filename = datetime.now().strftime('%d_%m_%Y')
         with io.open("diem_danh/{}.txt".format(filename), 'w', encoding='utf8') as f:
             f.write("==========DANH SÁCH LỚP============\n")
-            f.write(str(get_list_student("data/data.json"))+"\n")
+            f.write(str(get_list_student("data/data.json")) + "\n")
             f.write("==========CÓ MẶT============\n")
             for value in list_present:
                 f.write(value+"\n")
@@ -184,7 +184,7 @@ cv2.destroyAllWindows()
 
 
 
-        
+
 
 
 
