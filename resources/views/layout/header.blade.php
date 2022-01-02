@@ -6,7 +6,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span></button>
-					<a class="navbar-brand" href="#"><span>Lumino</span>Admin</a>
+					<a class="navbar-brand" href="{{route('admin')}}"><span>ĐIỂM DANH</span> SINH VIÊN</a>
 					<ul class="nav navbar-top-links navbar-right">
 						<li class="dropdown">
 							<a class=" count-info" href="{{ route('logout') }}">

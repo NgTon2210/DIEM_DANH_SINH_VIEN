@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
-use App\Student;
-use File;
-class StudentController extends Controller
+
+class TeacherController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
-        return view('Student.list_student',compact('students'));
+        $teachers = User::where('level',2)->get();
+        return view('Teacher.list_teacher',compact('teachers'));
     }
 
     /**
@@ -25,7 +25,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('Student.add_student');
+        return view('Teacher.add_teacher');
     }
 
     /**
@@ -36,15 +36,13 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-       $student = new Student;
-       $student->name = $request->name;
-       $student->student_code = $request->student_code;
-       File::makeDirectory('server/static/'.$request->student_code, 0777, true, true);
-       File::move(public_path('server/photo.jpg'), public_path('server/static/'.$request->student_code.'/'.$request->student_code.'.jpg'));
-       $student->photo = asset('server/static/'.$request->student_code.'/'.$request->student_code.'.jpg');
-       $student->save();
-       File::delete('server/static/representations_facenet512.pkl');
-       return redirect()->route('student.index');
+        $teacher = new User();
+        $teacher ->name = $request->name;
+        $teacher -> email = $request ->email;
+        $teacher ->password = bcrypt($request ->password);
+        $teacher ->level =2;
+        $teacher ->save();
+        return redirect()->route('teacher.index');
     }
 
     /**
@@ -66,8 +64,8 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        $student  = Student::findOrFail($id);
-        return view('Student.edit_student',compact('student'));
+        $teacher = User::findOrfail($id);
+        return view('Teacher.edit_teacher',compact('teacher'));
     }
 
     /**
@@ -79,10 +77,11 @@ class StudentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $student = Student::findOrFail($id);
-        $student->name = $request->name;
-        $student->save();
-        return redirect()->route('student.index');
+        $teacher = User::findOrfail($id);
+        $teacher ->name = $request->name;
+        $teacher -> email = $request ->email;
+        $teacher ->save();
+        return redirect()->back();
     }
 
     /**
@@ -93,7 +92,7 @@ class StudentController extends Controller
      */
     public function destroy($id)
     {
-       Student::destroy($id);
-       return redirect()->back();
+        User::destroy($id);
+        return redirect()->back();
     }
 }

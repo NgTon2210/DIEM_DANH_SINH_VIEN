@@ -3,10 +3,10 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="#">
+            <li><a href="{{route('home')}}">
                     <em class="fa fa-home"></em>
                 </a></li>
-            <li class="active">Tài khoản</li>
+            <li class="active">Khung giờ</li>
         </ol>
     </div>
 @if ($timeFrames)
@@ -15,9 +15,11 @@
             <div class="col-lg-12">
                 <h1 class="page-header">Quản lí sinh viên</h1>
                 <div class="text-right">
-                    <button type="button" class="btn btn-md btn-primary">Thêm khung giờ</button>
-                    <button type="button" class="btn btn-md btn-info">Sửa khung giờ</button>
-                    <button type="button" class="btn btn-md btn-danger">Xoá khung giờ</button>
+                    <a href="{{ route('frame_time.create') }}" type="button" class="btn btn-md btn-primary">
+                        <span class="fa fa-calendar"></span>
+                        Thêm khung giờ</a>
+
+
                 </div>
                 <ul class="nav nav-pills mb-3 time-active" id="pills-tab" role="tablist">
                     @foreach ($timeFrames as $timeFrame)

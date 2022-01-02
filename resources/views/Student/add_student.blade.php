@@ -6,45 +6,46 @@
             <li><a href="#">
                 <em class="fa fa-home"></em>
             </a></li>
-            <li class="active">Danh mục</li>
+            <li class="active">Sinh viên > Thêm sinh viên</li>
         </ol>
     </div><!--/.row-->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Thêm danh mục</h1>
             <div class="panel panel-default">
 
-                <div class="panel-heading">Bordered Table</div>
+                <div class="panel-heading">Thêm sinh viên</div>
 
                 <!--CONTAIN-MAIN-->
                 <div class="panel-body btn-margins">
                     <div class="row">
                         <div class="col-md-8">
-                            <form id="form_add_student" class="form-horizontal row-border col-md-8" action="{{ route('student.store') }}" method="POST">
+                            <form id="form_add_student"  action="{{ route('student.store') }}" method="POST">
                                 @csrf
-                                <div class="form-group">
-                                    <label class=" control-label">Tên</label>                       
+                                <div class="form-group" style="max-width: 38%">
+                                    <label class=" control-label">Tên</label>
                                     <input type="text" name="name" class="form-control">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" style="max-width: 38%">
                                     <label class=" control-label">Mã sinh viên</label>
-                                    <input type="text" name="student_code" class="form-control"> 
+                                    <input type="text" name="student_code" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label class=" control-label">Ảnh sinh viên</label>
                                     <div class="detect-image">
-                                        <img id="preview" src="https://picsum.photos/200/300/?blur">
+                                        <img id="preview" src="https://media.istockphoto.com/vectors/missing-image-of-a-person-placeholder-vector-id1288129985?k=20&m=1288129985&s=612x612&w=0&h=OHfZHfKj0oqIDMl5f_oRqH13MHiB63nUmySYILbWbjE=">
                                     </div>
                                 </div>
-                               <div class="text-center mt-20 ml-100">
-                                    <button type="submit" class="btn btn-md btn-success">Thêm mới</button>
-                                    <div id="take_picture_js" class="btn btn-md btn-success">Chup</div>
-                               </div>
+                                <button type="submit" class="btn btn-md btn-success">Thêm mới</button>
+
+
                             </form>
                         </div>
                         <div class="col-md-4">
                             <div class="detect-image">
-                                <img src="{{ env('SERVER_STREAM') }}">
+                                <img style="width: 100%;" src="{{ env('SERVER_STREAM') }}">
+                            </div>
+                            <div style="text-align: center;margin-top:30px;">
+                                <div style="display: inline-block;" id="take_picture_js" class="btn btn-md btn-success">Lấy ảnh</div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +61,7 @@
  <script>
         $.get("http://localhost:5000/camera_only_read", function(data, status){
         if (data.status != 'success') {
-            alert('server detect khong hoat dong');
+            alert('server chụp ảnh chưa được kích hoạt');
         }
 
       });
@@ -70,8 +71,8 @@
                 setTimeout(function () {
                     $('#preview').attr('src','http://localhost:8000/server/photo.jpg?mix='+Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15));
                 }, 500);
-                
-        }   
+
+        }
 
       });
       })

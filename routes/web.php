@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +28,7 @@ Route::prefix('admin')->middleware('CheckLogin')->group(function () {
     Route::get('logout', 'Auth\LoginController@HandleLogout')->name('logout');
     Route::get('/','AdminController@index' )->name('admin');
     Route::resource('student', 'StudentController');
+    Route::resource('frame_time', 'TimeFrameController');
+    Route::resource('teacher', 'TeacherController');
+    Route::resource('subject', 'SubjectController');
 });

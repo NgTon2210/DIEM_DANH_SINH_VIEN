@@ -13,7 +13,12 @@
     <link href="{{ asset('css/detect.css') }}" rel="stylesheet">
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
     <script>
+        $.get("http://localhost:5000/camera_detect", function(data, status){
+            if (data.status != 'success') {
+                alert('server detect không hoạt động');
+            }
 
+        });
         // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
     

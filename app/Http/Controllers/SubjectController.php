@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Subject;
 use Illuminate\Http\Request;
-use App\Student;
-use File;
-class StudentController extends Controller
+
+class SubjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students = Student::all();
-        return view('Student.list_student',compact('students'));
+        $subjects = Subject::all();
+        return view('Subject.list_subject',compact('subjects'));
     }
 
     /**
@@ -25,7 +25,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('Student.add_student');
+        return view('Subject.add_subject');
     }
 
     /**
@@ -36,15 +36,10 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-       $student = new Student;
-       $student->name = $request->name;
-       $student->student_code = $request->student_code;
-       File::makeDirectory('server/static/'.$request->student_code, 0777, true, true);
-       File::move(public_path('server/photo.jpg'), public_path('server/static/'.$request->student_code.'/'.$request->student_code.'.jpg'));
-       $student->photo = asset('server/static/'.$request->student_code.'/'.$request->student_code.'.jpg');
-       $student->save();
-       File::delete('server/static/representations_facenet512.pkl');
-       return redirect()->route('student.index');
+       $subject = new Subject();
+       $subject -> name = $request->name ;
+       $subject ->save();
+       return redirect()->route('subject.index');
     }
 
     /**
@@ -66,8 +61,8 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        $student  = Student::findOrFail($id);
-        return view('Student.edit_student',compact('student'));
+        $subject = Subject::findOrFail($id);
+        return view('Subject.edit_subject',compact('subject'));
     }
 
     /**
@@ -79,10 +74,10 @@ class StudentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $student = Student::findOrFail($id);
-        $student->name = $request->name;
-        $student->save();
-        return redirect()->route('student.index');
+        $subject = Subject::findOrFail($id);
+        $subject -> name = $request->name ;
+        $subject ->save();
+        return redirect()->back();
     }
 
     /**
@@ -93,7 +88,7 @@ class StudentController extends Controller
      */
     public function destroy($id)
     {
-       Student::destroy($id);
-       return redirect()->back();
+        Subject::destroy($id);
+        return redirect()->back();
     }
 }

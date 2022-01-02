@@ -106,6 +106,6 @@ class HomeController extends Controller
 
     public function addStudent()
     {
-        return view('add_student');
+        return view('Student.add_student');
     }
 }
