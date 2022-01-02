@@ -19,6 +19,6 @@ class Time_frame extends Model
 
     public function student()
     {
-        return $this->belongsToMany(student::class, 'classroom_details', 'time_frame_id', 'student_id')->withPivot(["time_in",'time_out']);;
+        return $this->belongsToMany(student::class, 'classroom_details', 'time_frame_id', 'student_id')->withPivot(["time_in",'time_out','state']);;
     }
 }

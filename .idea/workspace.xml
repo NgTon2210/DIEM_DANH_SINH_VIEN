@@ -2,29 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dd671e8-0690-495b-92ea-be5fd03183bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/server/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Time_frame.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Time_frame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database_design/database.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/database_design/database.mwb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database_design/database.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/database_design/database.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/detect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/detect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/server/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/server/photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/server/static/175A071456/photo6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/server/static/representations_facenet512.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Detect.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add_student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add_student.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/08_10_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/08_10_2021.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/10_10_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/10_10_2021.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/diem_danh/11_12_2021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/diem_danh/11_12_2021.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/main_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/core/main_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data_test/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data_test/img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data_test/my_self_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/data_test/my_self_2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +137,8 @@
       <workItem from="1640401016055" duration="152000" />
       <workItem from="1640401264091" duration="8087000" />
       <workItem from="1640510400216" duration="2544000" />
+      <workItem from="1640871041747" duration="5963000" />
+      <workItem from="1641020428354" duration="5861000" />
     </task>
     <servers />
   </component>
@@ -161,6 +158,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DIEM_DANH_SINH_VIEN$app.coverage" NAME="app Coverage Results" MODIFIED="1640511859644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/server" />
+    <SUITE FILE_PATH="coverage/DIEM_DANH_SINH_VIEN$app.coverage" NAME="app Coverage Results" MODIFIED="1641020455001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/server" />
   </component>
 </project>

@@ -3,12 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #d2e6e7;
+}
+.header{
+    padding: 30px;
+}
+.header img{
+    width: 420px;
+}
 .detect-login{
     text-align: end;
     padding: 20px;
 }
 .main{
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +29,13 @@
 .content-title{
     text-align: center;
     margin-bottom: 30px;
+    color: #000957;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px #6f7d9f;
 }
 .content .content-detect{
+   
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
@@ -29,8 +43,8 @@
     border-radius: 10px;
 }
 .detect-image{
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
 }
 .detect-image img{
     width: 100%;
@@ -40,5 +54,24 @@
     
 }
 .content .content-info h4{
-    margin-top: 100px;
+    margin-top: 30px;
+}
+.content .content-info .info-name{
+    margin-top: 50px;
+}
+.content .content-info .info-name p{
+    margin-top: 8px;
+    font-size: 20px;
+}
+.content .content-info span{
+    font-weight: 400;
+}
+.take-photo{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.take-photo img{
+    width: 350px;
+    height: 350px;
 }

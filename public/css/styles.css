@@ -1118,6 +1118,28 @@ ul.font-awesome-list {
   padding-left: 30px !important;
  
 }
+.d-flex{
+  display: flex;
+}
+.w-30{
+  width: 30%;
+}
+.w-50{
+  width: 50%;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.detect-image img{
+  width: 350px;
+  height: 350px;
+}
+.mt-20{
+  margin-top: 20px !important;
+}
+.ml-100{
+  margin-left: 100px !important;
+}
 ul.time-active{
   padding-bottom: 10px;
   border-bottom: 1px solid #d9d7d7;

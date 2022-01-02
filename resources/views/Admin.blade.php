@@ -14,13 +14,18 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Quản lí sinh viên</h1>
+                <div class="text-right">
+                    <button type="button" class="btn btn-md btn-primary">Thêm khung giờ</button>
+                    <button type="button" class="btn btn-md btn-info">Sửa khung giờ</button>
+                    <button type="button" class="btn btn-md btn-danger">Xoá khung giờ</button>
+                </div>
                 <ul class="nav nav-pills mb-3 time-active" id="pills-tab" role="tablist">
                     @foreach ($timeFrames as $timeFrame)
                     <li class="nav-item " role="presentation">
                         <a class="nav-link active" id="pills-home-tab{{ $timeFrame -> id }}" data-toggle="pill" href="#pills-home{{ $timeFrame->id }}" role="tab"
                             aria-controls="pills-home{{ $timeFrame->id }}" aria-selected="true">
                             <div class="range-time">
-                                <h4 class="text-center range-houre range-time-mb-0"><span>{{Carbon\Carbon::createFromFormat('H:i:s',$timeFrame->start_time)->format('h:i')}}</span>-<span>{{Carbon\Carbon::createFromFormat('H:i:s',$timeFrame->end_time)->format('h:i')}}</span>
+                                <h4 class="text-center range-houre range-time-mb-0"><span>{{Carbon\Carbon::parse($timeFrame->start_time)->format('H:i')}}</span>-<span>{{Carbon\Carbon::parse($timeFrame->end_time)->format('H:i')}}</span>
                                 </h4>
                                 <p class="text-center subject range-time-mb-0">{{  $timeFrame->subject->name  }}</p>
                                 <p class="text-center teacher range-time-mb-0">{{  $timeFrame->user->name  }}</p>
@@ -51,8 +56,8 @@
                                         <td>{{ $student->name }}</td>
                                         <td>{{ $student->pivot->time_in }}</td>
                                         <td>{{ $student->pivot->time_out }}</td>
-                                        <td>M</td>
-                                        <td>V</td>
+                                        <td>{{ $student->pivot->state == 'late_time'?'M':'' }}</td>
+                                        <td>{{ $student->pivot->state == 'absent_time'?'V':'' }}</td>
                                     </tr>
                                   @endforeach
         

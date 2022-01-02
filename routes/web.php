@@ -26,4 +26,5 @@ Route::post('/login', 'Auth\LoginController@HandleLogin')->middleware('CheckLogo
 Route::prefix('admin')->middleware('CheckLogin')->group(function () {
     Route::get('logout', 'Auth\LoginController@HandleLogout')->name('logout');
     Route::get('/','AdminController@index' )->name('admin');
+    Route::resource('student', 'StudentController');
 });
